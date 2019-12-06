@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pharmacy Locator</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="/css/table.css">
+	<link
+		href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+		rel="stylesheet">
+</head>
+
+<body style="background-color:white">
+
+	<center>
+		<div style="background-color:#36304a;height: px;color: white; font-size: 40px">Nearby pharmacy details</div>
+	</center>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Name</th>
+								<th class="column2">Rating</th>
+								<th class="column3">Vicinity</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each data}}
+							<tr>
+								<td class="column1">{{this.name}}</td>
+								<td class="column2">{{this.rating}}</td>
+								<td class="column3">{{this.vicinity}}</td>
+								
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</center>
+
+	<br><br>
+     
+</body>
+
+</html>
+							
